@@ -9,7 +9,8 @@ class File {
      // contains other Files).
      virtual bool IsDirectory() const = 0;
 
-     // Computes a hash-like identifier of this File, which should never change.
+     // Computes a hash-like identifier of this File, which should be a function
+     // of the contents of the file and should never change.
      virtual std::size_t Hash() const = 0;
 };
 
