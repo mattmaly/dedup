@@ -1,9 +1,9 @@
-#define CATCH_CONFIG_MAIN
 #include "dedup/regular-file.h"
-#include "external-deps/catch2/catch.hpp"
 
 #include <cstddef>
 #include <string>
+
+#include "external-deps/catch2/catch.hpp"
 
 TEST_CASE("Filepath should not affect the hash of a RegularFile") {
     const std::size_t filesize = 123;
