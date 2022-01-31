@@ -1,4 +1,4 @@
-test: build/dedup-tests-main.o build/test-cases/regular-file-test.o
+test: build/dedup-tests-main.o build/test-cases/file-test.o build/test-cases/regular-file-test.o
 	g++ -Wall -std=c++20 -I./src/ build/dedup-tests-main.o build/test-cases/*.o src/dedup/*.cc -o test
 	./test
 
